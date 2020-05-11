@@ -10,3 +10,6 @@ This script allows you to combine each round of the [European Social Survey](htt
 
 3. **Coding occupational class using the Oesch schema:** This script also adds a variable for social class using Oesch's simplified occupation-class crosswalk. The supplementary script `oesch_class_crosswalks.R` provides an easy way to access Oesch's Excel files in R without any manual editing.
 
+## Getting started
+
+In order to run the script `build_cumulative_ESS.R` you first need to [register your email address with the ESS](http://www.europeansocialsurvey.org/user/new). This allows you to download ESS data using the R package `essurvey`. You will need to fill in your registered email address in the `essurvey::set_email()` function.
