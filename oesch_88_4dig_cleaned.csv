@@ -1,0 +1,531 @@
+"","ISCO88.COM..code","MAJOR..SUB.MAJOR..MINOR.AND.UNIT.GROUPS","...3"
+"1",NA,"MAJOR GROUP 1: LEGISLATORS, SENIOR OFFICIALS AND MANAGERS",NA
+"2","11","Legislators and senior officials",9
+"3","111","Legislators and senior government officials",9
+"4","1110","Legislators and senior government officials",9
+"5","114","Senior officials of special-interest organisations",9
+"6","1141","Senior officials of political party organisations",9
+"7","1142","Senior officials of employers', workers' and other economic-interest organisations",9
+"8","1143","Senior officials of humanitarian and other special-interest organisations",9
+"9","12","Corporate managers",9
+"10","121","Directors and chief executives",9
+"11","1210","Directors and chief executives",9
+"12","122","Production and operations managers",9
+"13","1221","Production and operations managers in agriculture, hunting, forestry and fishing",9
+"14","1222","Production and operations managers in manufacturing",9
+"15","1223","Production and operations managers in construction",9
+"16","1224","Production and operations managers in wholesale and retail trade",9
+"17","1225","Production and operations managers in restaurants and hotels",9
+"18","1226","Production and operations managers in transport, storage and communications",9
+"19","1227","Production and operations managers in business services enterprises",9
+"20","1228","Production and operations managers in personal care, cleaning and related services",9
+"21","1229","Production and operations managers not elsewhere classified",9
+"22","123","Other specialist managers",9
+"23","1231","Finance and administration managers",9
+"24","1232","Personnel and industrial relations managers",9
+"25","1233","Sales and marketing managers",9
+"26","1234","Advertising and public relations managers",9
+"27","1235","Supply and distribution managers",9
+"28","1236","Computing services managers",9
+"29","1237","Research and development managers",9
+"30","1239","Other specialist managers not elsewhere classified",9
+"31","13","Managers of small enterprises",10
+"32","131","Managers of small enterprises",10
+"33","1311","Managers of small enterprises in agriculture, hunting,  forestry and fishing",10
+"34","1312","Managers of small enterprises in manufacturing",10
+"35","1313","Managers of small enterprises in construction",10
+"36","1314","Managers of small enterprises in wholesale and retail trade",10
+"37","1315","Managers of small enterprises of restaurants and hotels",10
+"38","1316","Managers of small enterprises in transport, storage and communications",10
+"39","1317","Managers of small enterprises in business services enterprises",10
+"40","1318","Managers of small enterprises in personal care, cleaning and related services",10
+"41","1319","Managers of small enterprises not elsewhere classifie",10
+"42",NA,"MAJOR GROUP 2: PROFESSIONALS",NA
+"43","21","Physical, mathematical and engineering science professionals",5
+"44","211","Physicists, chemists and related professionals",5
+"45","2111","Physicists and astronomers",5
+"46","2112","Meteorologists",5
+"47","2113","Chemists",5
+"48","2114","Geologists and geophysicists",5
+"49","212","Mathematicians, statisticians and related professionals",5
+"50","2121","Mathematicians and related professionals",5
+"51","2122","Statisticians",5
+"52","213","Computing professionals",5
+"53","2131","Computer systems designers, analysts and programmers",5
+"54","2139","Computing professionals not elsewhere classified",5
+"55","214","Architects, engineers and related professionals",5
+"56","2141","Architects, town and traffic planners",5
+"57","2142","Civil engineers",5
+"58","2143","Electrical engineers",5
+"59","2144","Electronics and telecommunications engineers",5
+"60","2145","Mechanical engineers",5
+"61","2146","Chemical engineers",5
+"62","2147","Mining engineers, metallurgists and related professionals",5
+"63","2148","Cartographers and surveyors",5
+"64","2149","Architects, engineers and related professionals not elsewhere classified",5
+"65","22","Life science and health professionals",5
+"66","221","Life science professionals",5
+"67","2211","Biologists, botanists, zoologists and related professionals",5
+"68","2212","Pharmacologists, pathologists and related professionals",5
+"69","2213","Agronomists and related professionals",5
+"70","222","Health professionals (except nursing)",13
+"71","2221","Medical doctors",13
+"72","2222","Dentists",13
+"73","2223","Veterinarians",13
+"74","2224","Pharmacists",13
+"75","2229","Health professionals (except nursing) not elsewhere classified",13
+"76","223","Nursing and midwifery professionals",13
+"77","2230","Nursing and midwifery professionals",13
+"78","23","Teaching professionals",13
+"79","231","College, university and higher education teaching professionals",13
+"80","2310","College, university and higher education teaching professionals",13
+"81","232","Secondary education teaching professionals",13
+"82","2320","Secondary education teaching professionals",13
+"83","233","Primary and pre-primary education teaching professionals",14
+"84","2331","Primary education teaching professionals",14
+"85","2332","Pre-primary education teaching professionals",14
+"86","234","Special education teaching professionals",13
+"87","2340","Special education teaching professionals",13
+"88","235","Other teaching professionals",13
+"89","2351","Education methods specialists",13
+"90","2352","School inspectors",13
+"91","2359","Other teaching professionals not elsewhere classified",13
+"92","24","Other professionals",9
+"93","241","Business professionals",9
+"94","2411","Accountants",9
+"95","2412","Personnel and careers professionals",9
+"96","2419","Business professionals not elsewhere classified",9
+"97","242","Legal professionals",9
+"98","2421","Lawyers",9
+"99","2422","Judges",9
+"100","2429","Legal professionals not elswhere classified",9
+"101","243","Archivists, librarians and related information professionals",13
+"102","2431","Archivists and curators",13
+"103","2432","Librarians and related information professionals",13
+"104","244","Social science and related professionals",13
+"105","2441","Economists",9
+"106","2442","Sociologists, anthropologists and related professionals",13
+"107","2443","Philosophers, historians and political scientists",13
+"108","2444","Philologists, translators and interpreters",14
+"109","2445","Psychologists",13
+"110","2446","Social work professionals",14
+"111","245","Writers and creative or performing artists",14
+"112","2451","Authors, journalists and other writers",13
+"113","2452","Sculptors, painters and related artists",14
+"114","2453","Composers, musicians and singers",14
+"115","2454","Choreographers and dancers",14
+"116","2455","Film, stage and related actors and directors",14
+"117","246","Religious professionals",13
+"118","2460","Religious professionals",13
+"119","247","Public service administrative professionals",9
+"120","2470","Public service administrative professionals",9
+"121",NA,"MAJOR GROUP 3:  TECHNICIANS AND ASSOCIATE PROFESSIONALS",NA
+"122","31","Physical and engineering science associate professionals",6
+"123","311","Physical and engineering science technicians",6
+"124","3111","Chemical and physical science technicians",6
+"125","3112","Civil engineering technicians",6
+"126","3113","Electrical engineering technicians",6
+"127","3114","Electronics and telecommunications engineering technicians",6
+"128","3115","Mechanical engineering technicians",6
+"129","3116","Chemical engineering technicians",6
+"130","3117","Mining and metallurgical technicians",6
+"131","3118","Draughtspersons",6
+"132","3119","Physical and engineering science technicians not elsewhere classified",6
+"133","312","Computer associate professionals",6
+"134","3121","Computer assistants",6
+"135","3122","Computer equipment operators",6
+"136","3123","Industrial robot controllers",6
+"137","313","Optical and electronic equipment operators",6
+"138","3131","Photographers and image and sound recording equipment operators",6
+"139","3132","Broadcasting and telecommunications equipment operators",6
+"140","3133","Medical equipment operators",6
+"141","3139","Optical and electronic equipment operators not elsewhere classified",6
+"142","314","Ship and aircraft controllers and technicians",6
+"143","3141","Ships' engineers",6
+"144","3142","Ships' deck officers and pilots",6
+"145","3143","Aircraft pilots and related associate professionals",6
+"146","3144","Air traffic controllers",6
+"147","3145","Air traffic safety technicians",6
+"148","315","Safety and quality inspectors",6
+"149","3151","Building and fire inspectors",6
+"150","3152","Safety, health and quality inspectors",6
+"151","32","Life science and health associate professionals",14
+"152","321","Life science technicians and related associate professional",6
+"153","3211","Life science technicians",6
+"154","3212","Agronomy and forestry technicians",6
+"155","3213","Farming and forestry advisers",6
+"156","322","Health associate professionals (except nursing)",14
+"157","3221","Medical assistants",14
+"158","3222","Hygienists, health and environmental officers",14
+"159","3223","Dieticians and nutritionists",14
+"160","3224","Optometrists and opticians",14
+"161","3225","Dental assistants",15
+"162","3226","Physiotherapists and related associate professionals",14
+"163","3227","Veterinary assistants",15
+"164","3228","Pharmaceutical assistants",15
+"165","3229","Health associate professionals (except nursing) not elsewhere classified",14
+"166","323","Nursing and midwifery associate professionals",14
+"167","3231","Nursing associate professionals",14
+"168","3232","Midwifery associate professionals",14
+"169","33","Teaching associate professionals",14
+"170","331","Primary education teaching associate professionals",14
+"171","3310","Primary education teaching associate professionals",14
+"172","332","Pre-primary education teaching associate professionals",14
+"173","3320","Pre-primary education teaching associate professionals",14
+"174","333","Special education teaching associate professionals",14
+"175","3330","Special education teaching associate professionals",14
+"176","334","Other teaching associate professionals",14
+"177","3340","Other teaching associate professionals",14
+"178","34","Other associate professionals",10
+"179","341","Finance and sales associate professionals",10
+"180","3411","Securities and finance dealers and brokers",10
+"181","3412","Insurance representatives",10
+"182","3413","Estate agents",10
+"183","3414","Travel consultants and organisers",10
+"184","3415","Technical and commercial sales representatives",10
+"185","3416","Buyers",10
+"186","3417","Appraisers, valuers and auctioneers",10
+"187","3419","Finance and sales associate professionals not elsewhere classified",10
+"188","342","Business services agents and trade brokers",10
+"189","3421","Trade brokers",10
+"190","3422","Clearing and forwarding agents",10
+"191","3423","Employment agents and labour contractors",10
+"192","3429","Business services agents and trade brokers not elsewhere classified",10
+"193","343","Administrative associate professionals",10
+"194","3431","Administrative secretaries and related associate professionals",10
+"195","3432","Legal and related business associate professionals",10
+"196","3433","Bookkeepers",10
+"197","3434","Statistical, mathematical and related associate professionals",6
+"198","344","Customs, tax and related government associate professionals",10
+"199","3441","Customs and border inspectors",10
+"200","3442","Government tax and excise officials",10
+"201","3443","Government social benefits officials",10
+"202","3444","Government licensing officials",10
+"203","3449","Customs, tax and related government associate professionals not elsewhere classified",10
+"204","345","Police inspectors and detectives",10
+"205","3450","Police inspectors and detectives",10
+"206","346","Social work associate professionals",14
+"207","3460","Social work associate professionals",14
+"208","347","Artistic, entertainment and sports associate professionals",14
+"209","3471","Decorators and commercial designers",14
+"210","3472","Radio, television and other announcers",14
+"211","3473","Street, night-club and related musicians, singers and dancers",15
+"212","3474","Clowns, magicians, acrobats and related associate professionals",15
+"213","3475","Athletes, sports persons and related associate professionals",15
+"214","348","Religious associate professionals",14
+"215","3480","Religious associate professionals",14
+"216",NA,"MAJOR GROUP 4:  CLERKS",NA
+"217","41","Office clerks",11
+"218","411","Secretaries and keyboard-operating clerks",11
+"219","4111","Stenographers and typists",11
+"220","4112","Word-processor and related operators",11
+"221","4113","Data entry operators",12
+"222","4114","Calculating-machine operators",11
+"223","4115","Secretaries",11
+"224","412","Numerical clerks",11
+"225","4121","Accounting and book-keeping clerks",11
+"226","4122","Statistical and finance clerks",11
+"227","413","Material-recording and transport clerks",11
+"228","4131","Stock clerks",11
+"229","4132","Production clerks",11
+"230","4133","Transport clerks",11
+"231","414","Library, mail and related clerks",11
+"232","4141","Library and filing clerks",11
+"233","4142","Mail carriers and sorting clerks",11
+"234","4143","Coding, proof-reading and related clerks",11
+"235","4144","Scribes and related workers",11
+"236","419","Other office clerks",11
+"237","4190","Other office clerks",11
+"238","42","Customer services clerks",11
+"239","421","Cashiers, tellers and related clerks",11
+"240","4211","Cashiers and ticket clerks",12
+"241","4212","Tellers and other counter clerks",11
+"242","4213","Bookmakers and croupiers",11
+"243","4214","Pawnbrokers and money-lenders",11
+"244","4215","Debt-collectors and related workers",11
+"245","422","Client information clerks",11
+"246","4221","Travel agency and related clerks",11
+"247","4222","Receptionists and information clerks",11
+"248","4223","Telephone switchboard operators",12
+"249",NA,"MAJOR GROUP 5:  SERVICE WORKERS AND SHOP AND MARKET SALES WORKERS",NA
+"250","51","Personal and protective services workers",15
+"251","511","Travel attendants and related workers",15
+"252","5111","Travel attendants and travel stewards",15
+"253","5112","Transport conductors",15
+"254","5113","Travel guides",15
+"255","512","Housekeeping and restaurant services workers",16
+"256","5121","Housekeepers and related workers",16
+"257","5122","Cooks",15
+"258","5123","Waiters, waitresses and bartenders",16
+"259","513","Personal care and related workers",16
+"260","5131","Child-care workers",15
+"261","5132","Institution-based personal care workers",15
+"262","5133","Home-based personal care workers",16
+"263","5139","Personal care and related workers not elsewhere classified",16
+"264","514","Other personal services workers",15
+"265","5141","Hairdressers, barbers, beauticians and related workers",15
+"266","5142","Companions and valets",16
+"267","5143","Undertakers and embalmers",15
+"268","5149","Other personal services workers not elsewhere classified",16
+"269","516","Protective services workers",15
+"270","5161","Fire-fighters",15
+"271","5162","Police officers",15
+"272","5163","Prison guards",15
+"273","5169","Protective services workers not elsewhere classified",15
+"274","52","Models, salespersons and demonstrators",15
+"275","521","Fashion and other models",15
+"276","5210","Fashion and other models",15
+"277","522","Shop, stall and market salespersons and demonstrators",15
+"278","5220","Shop, stall and market salespersons and demonstrators",15
+"279","5230","Stall and market salespersons",16
+"280",NA,"MAJOR GROUP 6:  SKILLED AGRICULTURAL AND FISHERY WORKERS",NA
+"281","61","Skilled agricultural and fishery workers",7
+"282","611","Market gardeners and crop growers",7
+"283","6111","Field crop and vegetable growers",7
+"284","6112","Gardeners, horticultural and nursery growers",7
+"285","612","Animal producers and related workers",7
+"286","6121","Dairy and livestock producers",7
+"287","6122","Poultry producers",7
+"288","6129","Animal producers and related workers not elsewhere classified",7
+"289","613","Crop and animal producers",7
+"290","6130","Crop and animal producers",7
+"291","614","Forestry and related workers",7
+"292","6141","Forestry workers and loggers",7
+"293","6142","Charcoal burners and related workers",7
+"294","615","Fishery workers, hunters and trappers",7
+"295","6151","Aquatic life cultivation workers",7
+"296","6152","Inland and coastal waters fishery workers",7
+"297","6153","Deep-sea fishery workers",7
+"298","6154","Hunters and trappers",7
+"299","6200","Subsistence agricultural and fishery workers",7
+"300","6210","Subsistence agricultural and fishery workers",7
+"301",NA,"MAJOR GROUP 7:  CRAFT AND RELATED TRADES WORKERS",NA
+"302","71","Extraction and building trades workers",7
+"303","711","Miners, shotfirers, stone cutters and carvers",7
+"304","7111","Miners and quarry workers",7
+"305","7112","Shotfirers and blasters",7
+"306","7113","Stone splitters, cutters and carvers",7
+"307","712","Building frame and related trades workers",7
+"308","7121","Builders",7
+"309","7122","Bricklayers and stonemasons",7
+"310","7123","Concrete placers, concrete finishers and related workers",7
+"311","7124","Carpenters and joiners",7
+"312","7129","Building frame and related trades workers not elsewhere classified",7
+"313","713","Building finishers and related trades workers",7
+"314","7131","Roofers",7
+"315","7132","Floor layers and tile setters",7
+"316","7133","Plasterers",7
+"317","7134","Insulation workers",7
+"318","7135","Glaziers",7
+"319","7136","Plumbers and pipe fitters",7
+"320","7137","Building and related electricians",7
+"321","7139","Building finishers and related trade workers not elsewhere classified",7
+"322","714","Painters, building structure cleaners and related trades workers",7
+"323","7141","Painters and related workers",7
+"324","7143","Building structure cleaners",7
+"325","72","Metal, machinery and related trades workers",7
+"326","721","Metal moulders, welders, sheet-metal workers, structural-metal preparers, and related trades workers",7
+"327","7211","Metal moulders and coremakers",7
+"328","7212","Welders and flame cutters",7
+"329","7213","Sheet-metal workers",7
+"330","7214","Structural-metal preparers and erectors",7
+"331","7215","Riggers and cable splicers",7
+"332","7216","Underwater workers",7
+"333","722","Blacksmiths, tool-makers and related trades workers",7
+"334","7221","Blacksmiths, hammer-smiths and forging-press workers",7
+"335","7222","Tool-makers and related workers",7
+"336","7223","Machine-tool setters and setter-operators",7
+"337","7224","Metal wheel-grinders, polishers and tool sharpeners",7
+"338","723","Machinery mechanics and fitters",7
+"339","7231","Motor vehicle mechanics and fitters",7
+"340","7232","Aircraft engine mechanics and fitters",7
+"341","7233","Agricultural- or industrial-machinery mechanics and fitters",7
+"342","724","Electrical and electronic equipment mechanics and fitters",7
+"343","7241","Electrical mechanics fitters and services",7
+"344","7242","Electronics mechanics, fitters and servicers",7
+"345","7244","Telegraph and telephone installers and servicers",7
+"346","7245","Electrical line installers, repairers and cable jointers",7
+"347","73","Precision, handicraft, craft printing and related trades workers",7
+"348","731","Precision workers in metal and related materials",7
+"349","7311","Precision-instrument makers and repairers",7
+"350","7312","Musical-instrument makers and tuners",7
+"351","7313","Jewellery and precious-metal workers",7
+"352","732","Potters, glass-makers and related trades workers",7
+"353","7321","Abrasive wheel formers, potters and related workers",7
+"354","7322","Glass-makers, cutters, grinders and finishers",7
+"355","7323","Glass engravers and etchers",7
+"356","7324","Glass, ceramics and related decorative painters",7
+"357","733","Handicraft workers in wood, textile, leather and related materials",7
+"358","7331","Handicraft workers in wood and related materials",7
+"359","7332","Handicraft workers in textile, leather and related materials",7
+"360","734","Craft printing and related trades workers",7
+"361","7341","Compositors, typesetters and related workers",7
+"362","7342","Stereotypers and electrotypers",7
+"363","7343","Printing engravers and etchers",7
+"364","7344","Photographic and related workers",7
+"365","7345","Bookbinders and related workers",7
+"366","7346","Silk-screen, block and craft textile printers",7
+"367","74","Other craft and related trades workers",7
+"368","741","Food processing and related trades workers",7
+"369","7411","Butchers, fishmongers and related food preparers",7
+"370","7412","Bakers, pastry-cooks and confectionery makers",7
+"371","7413","Dairy-products workers",7
+"372","7414","Fruit, vegetable and related preservers",7
+"373","7415","Food and beverage tasters and graders",7
+"374","7416","Tobacco preparers and tobacco products makers",7
+"375","742","Wood treaters, cabinet-makers and related trades workers",7
+"376","7421","Wood treaters",7
+"377","7422","Cabinetmakers and related workers",7
+"378","7423","Woodworking machine setters and setter-operators",7
+"379","7424","Basketry weavers, brush makers and related workers",7
+"380","743","Textile, garment and related trades workers",7
+"381","7431","Fibre preparers",7
+"382","7432","Weavers, knitters and related workers",7
+"383","7433","Tailors, dressmakers and hatters",7
+"384","7434","Furriers and related workers",7
+"385","7435","Textile, leather and related pattern-makers and cutters",7
+"386","7436","Sewers, embroiderers and related workers",7
+"387","7437","Upholsterers and related workers",7
+"388","744","Pelt, leather and shoemaking trades workers",7
+"389","7441","Pelt dressers, tanners and fellmongers",7
+"390","7442","Shoe-makers and related workers",7
+"391","7500","Metal worker general",7
+"392","7510","Metal worker n.e.c.",7
+"393","7520","Electronics engineers n.e.c.",5
+"394","7900","Master craftsman, supervisor",6
+"395",NA,"MAJOR GROUP 8:  PLANT AND MACHINE OPERATORS AND ASSEMBLERS",NA
+"396","81","Stationary plant and related operators",8
+"397","811","Mining and mineral-processing-plant operators",8
+"398","8111","Mining plant operators",8
+"399","8112","Mineral-ore and stone-processing-plant operators",8
+"400","8113","Well drillers and borers and related workers",8
+"401","812","Metal-processing plant operators",8
+"402","8121","Ore and metal furnace operators",8
+"403","8122","Metal melters, casters and rolling-mill operators",8
+"404","8123","Metal heat-treating-plant operators",8
+"405","8124","Metal drawers and extruders",8
+"406","813","Glass, ceramics and related plant operators",8
+"407","8131","Glass and ceramics kiln and related machine operators",8
+"408","8139","Glass, ceramics and related plant operators not elsewhere classified",8
+"409","814","Wood-processing- and papermaking-plant operators",8
+"410","8141","Wood-processing-plant operators",8
+"411","8142","Paper-pulp plant operators",8
+"412","8143","Papermaking-plant operators",8
+"413","815","Chemical-processing-plant operators",8
+"414","8151","Crushing-, grinding- and chemical-mixing-machinery operators",8
+"415","8152","Chemical-heat-treating-plant operators",8
+"416","8153","Chemical-filtering- and separating-equipment operators",8
+"417","8154","Chemical-still and reactor operators (except petroleum and natural gas)",8
+"418","8155","Petroleum- and natural-gas-refining-plant operators",8
+"419","8159","Chemical-processing-plant operators not elsewhere classified",8
+"420","816","Power-production and related plant operators",8
+"421","8161","Power-production plant operators",8
+"422","8162","Steam-engine and boiler operators",8
+"423","8163","Incinerator, water-treatment and related plant operators",8
+"424","817","Industrial robot operators",8
+"425","8170","Industrial robot operators",8
+"426","82","Machine operators and assemblers",8
+"427","821","Metal- and mineral-products machine operators",8
+"428","8211","Machine-tool operators",8
+"429","8212","Cement and other mineral products machine operators",8
+"430","822","Chemical-products machine operators",8
+"431","8221","Pharmaceutical-and toiletry-products machine operators",8
+"432","8222","Ammunition- and explosive-products machine operators",8
+"433","8223","Metal finishing-, plating- and coating-machine operators",8
+"434","8224","Photographic-products machine operators",8
+"435","8229","Chemical-products machine operators not elsewhere classified",8
+"436","823","Rubber- and plastic-products machine operators",8
+"437","8231","Rubber-products machine operators",8
+"438","8232","Plastic-products machine operators",8
+"439","824","Wood-products machine operators",8
+"440","8240","Wood-products machine operators",8
+"441","825","Printing-, binding- and paper-products machine operators",8
+"442","8251","Printing-machine operators",8
+"443","8252","Book-binding-machine operators",8
+"444","8253","Paper-products machine operators",8
+"445","826","Textile-, fur- and leather-products machine operators",8
+"446","8261","Fibre-preparing-, spinning- and winding-machine operators",8
+"447","8262","Weaving- and knitting-machine operators",8
+"448","8263","Sewing-machine operators",8
+"449","8264","Bleaching-, dyeing- and cleaning-machine operators",8
+"450","8265","Fur- and leather-preparing-machine operators",8
+"451","8266","Shoemaking- and related machine operators",8
+"452","8269","Textile-, fur- and leather-products machine operators not elsewhere classified",8
+"453","827","Food and related products machine operators",8
+"454","8271","Meat- and fish-processing-machine operators",8
+"455","8272","Dairy-products machine operators",8
+"456","8273","Grain- and spice-milling-machine operators",8
+"457","8274","Baked-goods, cereal- and chocolate-products machine operators",8
+"458","8275","Fruit-, vegetable- and nut-processing-machine operators",8
+"459","8276","Sugar production machine operators",8
+"460","8277","Tea-, coffee- and cocoa-processing-machine operators",8
+"461","8278","Brewers, wine and other beverage machine operators",8
+"462","8279","Tobacco production machine operators",8
+"463","828","Assemblers",8
+"464","8281","Mechanical-machinery assemblers",8
+"465","8282","Electrical-equipment assemblers",8
+"466","8283","Electronic-equipment assemblers",8
+"467","8284","Metal-, rubber- and plastic-products assemblers",8
+"468","8285","Wood and related products assemblers",8
+"469","8286","Paperboard, textile and related products assemblers",8
+"470","8287","Composite products assemblers",8
+"471","829","Other machine operators not elsewhere classified",8
+"472","8290","Other machine operators not elsewhere classified",8
+"473","83","Drivers and mobile plant operators",8
+"474","831","Locomotive engine drivers and related workers",7
+"475","8311","Locomotive engine drivers",7
+"476","8312","Railway brakers, signallers and shunters",7
+"477","832","Motor vehicle drivers",8
+"478","8321","Motorcycle drivers",8
+"479","8322","Car, taxi and van drivers",16
+"480","8323","Bus and tram drivers",15
+"481","8324","Heavy truck and lorry drivers",7
+"482","833","Agricultural and other mobile plant operators",7
+"483","8331","Motorised farm and forestry plant operators",8
+"484","8332","Earth-moving and related plant operators",7
+"485","8333","Crane, hoist and related plant operators",7
+"486","8334","Lifting-truck operators",7
+"487","834","Ships' deck crews and related workers",7
+"488","8340","Ships' deck crews and related workers",7
+"489",NA,"MAJOR GROUP 9:  ELEMENTARY OCCUPATIONS",NA
+"490","91","Sales and services elementary occupations",16
+"491","911","Street vendors and related workers",16
+"492","9111","Street vendors",16
+"493","9113","Door-to-door and telephone salespersons",16
+"494","912","Shoe cleaning and other street services elementary occupations",16
+"495","9120","Shoe cleaning and other street services elementary occupations",16
+"496","913","Domestic and related helpers, cleaners and launderers",16
+"497","9131","Domestic helpers and cleaners",16
+"498","9132","Helpers and cleaners in offices, hotels and other establishments",16
+"499","9133","Hand-launderers and pressers",16
+"500","914","Building caretakers, window and related cleaners",16
+"501","9141","Building caretakers",16
+"502","9142","Vehicle, window and related cleaners",16
+"503","915","Messengers, porters, doorkeepers and related workers",16
+"504","9151","Messengers, package and luggage porters and deliverers",16
+"505","9152","Doorkeepers, watchpersons and related workers",16
+"506","9153","Vending-machine money collectors, meter readers and related workers",8
+"507","916","Garbage collectors and related labourers",8
+"508","9161","Garbage collectors",8
+"509","9162","Sweepers and related labourers",8
+"510","92","Agricultural, fishery and related labourers",8
+"511","921","Agricultural, fishery and related labourers",8
+"512","9211","Farm-hands and labourers",8
+"513","9212","Forestry labourers",8
+"514","9213","Fishery, hunting and trapping labourers",8
+"515","93","Labourers in mining, construction, manufacturing and transport",8
+"516","931","Mining and construction labourers",8
+"517","9311","Mining and quarrying labourers",8
+"518","9312","Construction and maintenance labourers: roads, dams and similar constructions",8
+"519","9313","Building construction labourers",8
+"520","932","Manufacturing labourers",8
+"521","9320","Manufacturing labourers",8
+"522","933","Transport labourers and freight handlers",8
+"523","9330","Transport labourers and freight handlers",8
+"524","9331","Hand and pedal vehicle drivers",8
+"525","9332","Drivers of animal-drawn vehicles and machinery",8
+"526","9333","Freight handlers",8
+"527",NA,"MAJOR GROUP 0:  ARMED FORCES",NA
+"528","1","Armed forces",NA
+"529","10","Armed forces",NA
+"530","100","Armed forces",NA

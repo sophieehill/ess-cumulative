@@ -1,0 +1,54 @@
+"","ISCO.08.Code","Title.EN","Oesch.Class"
+"1","1","Managers",9
+"2","11","Chief executives, senior officials and legislators",9
+"3","12","Administrative and commercial managers",9
+"4","13","Production and specialised services managers",9
+"5","14","Hospitality, retail and other services managers",10
+"6","2","Professionals",NA
+"7","21","Science and engineering professionals",5
+"8","22","Health professionals",13
+"9","23","Teaching professionals",13
+"10","24","Business and administration professionals",9
+"11","25","Information and communications technology professionals",5
+"12","26","Legal, social and cultural professionals",13
+"13","3","Technicians and associate professionals",NA
+"14","31","Science and engineering associate professionals",6
+"15","32","Health associate professionals",14
+"16","33","Business and administration associate professionals",10
+"17","34","Legal, social, cultural and related associate professionals",14
+"18","35","Information and communications technicians",6
+"19","4","Clerical support workers",11
+"20","41","General and keyboard clerks",11
+"21","42","Customer services clerks",11
+"22","43","Numerical and material recording clerks",11
+"23","44","Other clerical support workers",11
+"24","5","Service and sales workers",15
+"25","51","Personal service workers",15
+"26","52","Sales workers",15
+"27","53","Personal care workers",15
+"28","54","Protective services workers",15
+"29","6","Skilled agricultural, forestry and fishery workers",7
+"30","61","Market-oriented skilled agricultural workers",7
+"31","62","Market-oriented skilled forestry, fishery and hunting workers",7
+"32","63","Subsistence farmers, fishers, hunters and gatherers",7
+"33","7","Craft and related trades workers",7
+"34","71","Building and related trades workers, excluding electricians",7
+"35","72","Metal, machinery and related trades workers",7
+"36","73","Handicraft and printing workers",7
+"37","74","Electrical and electronic trades workers",7
+"38","75","Food processing, wood working, garment and other craft and related trades workers",7
+"39","8","Plant and machine operators, and assemblers",8
+"40","81","Stationary plant and machine operators",8
+"41","82","Assemblers",8
+"42","83","Drivers and mobile plant operators",8
+"43","9","Elementary occupations",NA
+"44","91","Cleaners and helpers",16
+"45","92","Agricultural, forestry and fishery labourers",8
+"46","93","Labourers in mining, construction, manufacturing and transport",8
+"47","94","Food preparation assistants",16
+"48","95","Street and related sales and service workers",16
+"49","96","Refuse workers and other elementary workers",8
+"50","01","Commissioned armed forces officers",9
+"51","02","Non-commissioned armed forces officers",10
+"52","","",NA
+"53","Daniel Oesch, 7 January 2015","",NA
