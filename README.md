@@ -8,5 +8,5 @@ This script allows you to combine each round of the [European Social Survey](htt
 
 2. **Harmonized variables for basic demographics:** Educational attainment is measured by the variable `edulvla` for ESS Rounds 1-4, and by the variable `edulvlb` for ESS rounds 5-9. In this script we create an single indicator for whether the respondent has a bachelor's degree or above, across all rounds.
 
-3. **Coding occupational class using the Oesch schema:** Add a variable for social class using Oesch's occupation-class crosswalk. The supplementary script provides an easy way to access these Excel files in R without any manual editing.
+3. **Coding occupational class using the Oesch schema:** This script also adds a variable for social class using Oesch's simplified occupation-class crosswalk. The supplementary script `oesch_class_crosswalks.R` provides an easy way to access Oesch's Excel files in R without any manual editing.
 
