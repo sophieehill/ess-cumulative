@@ -170,54 +170,12 @@ ess <- left_join(ess, cw_ess_pf, by=c("party.vote.ess"))
 tabl(temp$party.vote.ess)
 tabl(temp$partyfacts_id)
 
-# now load the Partyfacts-External crosswalk and select the Manifesto dataset
-# this lets us link those partyfacts IDs to *other* datasets
-cw_pf <- read_csv(url("https://partyfacts.herokuapp.com/download/external-parties-csv/"))
-cw_pf$dataset_party_id <- as.numeric(as.character(cw_pf$dataset_party_id))
-cw_pf_cmp <- cw_pf %>% filter(dataset_key == "manifesto") %>% select(partyfacts_id, dataset_party_id)
-
-names(cw_pf_cmp) <- c("partyfacts_id", "cmp_id")
-
-ess <- left_join(ess, cw_pf_cmp, by=c("partyfacts_id"))
-tabl(ess$cmp_id)
-
-# Merge with CMP data to get party families
-# Download latest CMP dataset
-# You need to get an API key by creating an account with the CMP
-# Login and go to your profile page to generate an API key:
-# https://manifesto-project.wzb.eu/login
-library(manifestoR)
-# set API key
-mp_setapikey(key = "YOUR_API_KEY")
-# download latest dataset
-cmp <- as.data.frame(mp_maindataset())
-head(cmp)
-summary(cmp$party)
-# create election year variable
-cmp$year <- as.numeric(as.character(substr(cmp$date, 1, 4)))
-# select party code - party family vars
-cmp.x <- cmp %>% select(party, parfam) %>% unique()
-length(unique(cmp.x$party)) 
-names(cmp.x) <- c("cmp_id", "cmp_parfam")
-# no duplicates - i.e. no parties have "switched" party families in the CMP data!
-# merge
-ess <- left_join(ess, cmp.x, by="cmp_id")
-tabl(ess$cmp_parfam)
-
-# create left vote intention based on party families
-# 10 = ecological
-# 20 = socialist or other left
-# 30 = social democratic
-ess$vote.int.left <- ifelse(ess$cmp_parfam==10 | ess$cmp_parfam==20 | ess$cmp_parfam==30, 1, 0)
-tabl(ess$vote.int.left)
-
 names(ess)
 
 head(ess)
 essx <- ess %>% select(idno, cntry, essround, essround.year,
                        female, age, age.group, educ.ba,
                        oesch_class, oesch_class_sum,
-                       party.vote.ess, partyfacts_id, partyfacts_name,
-                       cmp_id, cmp_parfam, vote.int.left) %>% 
+                       party.vote.ess, partyfacts_id, partyfacts_name) %>% 
                        as.data.frame()
 write.csv(essx, "ess_cumulative_core.csv")
