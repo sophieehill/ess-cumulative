@@ -42,6 +42,7 @@ es.df.clean <- function(x){
   esx <- x %>% select("essround", # REQUIRED: essround
                       "idno", # REQUIRED: respondent ID
                       "cntry", # REQUIRED: country 
+                      starts_with("inw"), # REQUIRED: interview date (to match vote recall to specific election)
                       "gndr" , # gender
                       "agea", # age
                       starts_with("edulvl"), # educational attainment (several vars)
@@ -170,12 +171,106 @@ ess <- left_join(ess, cw_ess_pf, by=c("party.vote.ess"))
 tabl(temp$party.vote.ess)
 tabl(temp$partyfacts_id)
 
+# now load the Partyfacts-External crosswalk and select the Manifesto dataset
+# this lets us link those partyfacts IDs to *other* datasets
+cw_pf <- read_csv(url("https://partyfacts.herokuapp.com/download/external-parties-csv/"))
+cw_pf$dataset_party_id <- as.numeric(as.character(cw_pf$dataset_party_id))
+cw_pf_cmp <- cw_pf %>% filter(dataset_key == "manifesto") %>% select(partyfacts_id, dataset_party_id)
+
+names(cw_pf_cmp) <- c("partyfacts_id", "cmp_id")
+
+ess <- left_join(ess, cw_pf_cmp, by=c("partyfacts_id"))
+tabl(ess$cmp_id)
+
+# In order to merge in election-level variables (e.g. measures of a party's manifesto for a particular election), we need to match up the ESS dates to the most recent election
+# Some ESS fieldwork occurs over an election period, meaning that respondents within the same country-round would be referring to different elections when they recall their "past vote"
+# First, let's import the dataset from Denis Cohen's github: https://github.com/denis-cohen/ess-election-dates
+ess_dates <- read_csv(url("https://raw.githubusercontent.com/denis-cohen/ess-election-dates/master/ess_election_dates.csv"))
+# select needed vars
+ess_dates <- ess_dates %>% select(cntry, essround, recent_election, recent_election_split1)
+# merge in
+ess <- left_join(ess, ess_dates, by=c("cntry", "essround"))
+
+# create a variable indicating date of interview for each respondent
+# first create day/month/year variables consistent across rounds
+# from ESS Round 3 onwards, they give us the start (inwdds) AND end date (inwdde) of the interview
+# here I am taking the start date as our reference point
+# I *think* the politics module occurs fairly early during the survey
+# Alternatively we coulld take the midpoint, or use the end date? 
+ess <- ess %>% mutate(int.day = case_when(essround<3 ~ inwdd,
+                                          essround>2 ~ inwdds)) %>%
+              mutate(int.month = case_when(essround<3 ~ inwmm,
+                                          essround>2 ~ inwmms)) %>%
+              mutate(int.year = case_when(essround<3 ~ inwyr,
+                                          essround>2 ~ inwyys))
+ess <- ess %>% mutate(int.date = as.Date(paste(int.year, int.month, int.day, sep="-")))
+tabl(ess$int.date)
+# for each respondent, let's define their "most recent election", based on start interview date
+ess <- ess %>% mutate(ref.election = case_when(int.date > recent_election ~ recent_election,
+                                               int.date <= recent_election ~ recent_election_split1))
+tabl(ess$ref.election)
+# if the specific date is missing let's just match up using the country-year pair
+
+
+# Merge with CMP data to get party families
+# Download latest CMP dataset
+# (Use API or just load "cmp.csv")
+library(manifestoR)
+# set API key
+mp_setapikey(key = "70af9d9d7f76a3d66d41142debe969f6")
+# download latest dataset
+cmp <- as.data.frame(mp_maindataset())
+# save for replicability
+# write.csv(cmp, "cmp_main_2020.csv")
+head(cmp)
+tabl(cmp$edate)
+summary(cmp$party)
+# create election year variable
+cmp$election.year <- as.numeric(as.character(substr(cmp$date, 1, 4)))
+# select party code, party family
+# as well as party-election specific variables like right/left coding of the manifesto
+# also included the codes used to construct left-right and lib-auth scales in Bakker & Hobolt (2013)
+cmp.x <- cmp %>% select(party, parfam, election.year, edate, rile, 
+                        per401, per402, per407, per505, 
+                        per507, per410, per414, per702,
+                        per403, per404, per406, per504, 
+                        per506, per413, per412, per701, 
+                        per405, per409, per415, per503,
+                        per305, per601, per603, per605, 
+                        per608, per606,
+                        per501, per602, per604, per502, 
+                        per607, per416, per705, per706, 
+                        per201, per202) 
+names(cmp.x)[1:2] <- c("cmp_id", "cmp_parfam") # relabel for clarity
+head(cmp.x)
+ess$election.year <- as.numeric(as.character(substr(ess$ref.election, 1, 4)))
+tabl(ess$election.year)
+# match up by election year
+# N.B. this won't work for cases where two elections happen in the same year, and ESS fieldwork window covers the 2nd election
+ess <- left_join(ess, cmp.x, by=c("cmp_id", "election.year"))
+# alternatively we could match on exact election date
+# cmp.x$election.date <- as.Date(cmp.x$edate)
+# ess$election.date <- as.Date(ess$ref.election)
+# ess <- left_join(ess, cmp.x, by=c("cmp_id", "election.date"))
+
+# create left vote recall based on party families
+# 10 = ecological
+# 20 = socialist or other left
+# 30 = social democratic
+ess$vote.left <- ifelse(ess$cmp_parfam==10 | ess$cmp_parfam==20 | ess$cmp_parfam==30, 1, 0)
+tabl(ess$vote.left)
+
 names(ess)
 
 head(ess)
-essx <- ess %>% select(idno, cntry, essround, essround.year,
-                       female, age, age.group, educ.ba,
+essx <- ess %>% select(idno, cntry, essround, essround.year, int.date,
+                       female, age, age.group, educ.ba, domicil,
                        oesch_class, oesch_class_sum,
-                       party.vote.ess, partyfacts_id, partyfacts_name) %>% 
+                       nace.summary, lrscale,
+                       party.vote.ess, partyfacts_id, partyfacts_name,
+                       cmp_id, cmp_parfam, vote.left, ref.election,
+                       election.year, edate, rile,
+                       starts_with("per")) %>% 
                        as.data.frame()
+
 write.csv(essx, "ess_cumulative_core.csv")
