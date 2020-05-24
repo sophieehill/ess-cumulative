@@ -1,12 +1,12 @@
 # Building the cumulative ESS dataset
 
-This script allows you to combine each round of the [European Social Survey](https://www.europeansocialsurvey.org/) into one cumulative dataset, with harmonized variables for basic demographics and vote intention.
+This script allows you to combine each round of the [European Social Survey](https://www.europeansocialsurvey.org/) into one cumulative dataset, with harmonized variables for basic demographics and vote recall.
 
 ## Features
 
-1. **Harmonized vote intention variable:** Vote intention is originally measured in the ESS with a country-round specific variable. For example, the variable `prtvtcgb` corresponds to the vote choice for respondents in the United Kingdom surveyed for ESS Round 9. This script coalesces these country-round specific variables into one generalized variable, by linking the ESS codes to the [Partyfacts](https://partyfacts.herokuapp.com/) ID. 
+1. **Harmonized vote recall variable:** Vote recall is originally measured in the ESS with a country-round specific variable. For example, the variable `prtvtcgb` corresponds to the vote choice for respondents in the United Kingdom surveyed for ESS Round 9. This script coalesces these country-round specific variables into one generalized variable, by linking the ESS codes to the [Partyfacts](https://partyfacts.herokuapp.com/) ID. 
 
-2. **Linking party IDs to external datasets:** This code also provides an example of how to merge in information from other party-level datasets. In this case, we use the Partyfacts IDs to link to the [Manifesto Project](https://manifesto-project.wzb.eu/) data, which provides the party families.
+2. **Linking party IDs to external datasets:** This code also provides an example of how to merge in information from other party-level datasets. In this case, we use the Partyfacts IDs to link to the [Manifesto Project](https://manifesto-project.wzb.eu/) data, which provides the party families. I also use [Denis Cohen](https://github.com/denis-cohen/ess-election-dates)'s useful crosswalk to help determine the "reference election" when respondents are asked to recall their vote. This allows us to merge in party-election specific variables from the Manifesto Project, like the right-left coding of a particular manifesto.
 
 3. **Harmonized variables for basic demographics:** Educational attainment is measured by the variable `edulvla` for ESS Rounds 1-4, and by the variable `edulvlb` for ESS rounds 5-9. In this script we create an single indicator for whether the respondent has a bachelor's degree or above, across all rounds.
 
