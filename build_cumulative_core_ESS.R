@@ -284,7 +284,7 @@ essx <- ess %>% select(idno, cntry, essround, essround.year, int.date,
                        nace.summary, lrscale,
                        party.vote.ess, partyfacts_id, partyfacts_name,
                        cmp_id, cmp_parfam, vote.left, ref.election,
-                       election.year, edate, rile, vote.int.left,
+                       election.year, edate, rile,
                        econlr, econlr.sal, auth, auth.sal) %>% 
                        as.data.frame()
 
