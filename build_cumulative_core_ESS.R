@@ -227,20 +227,35 @@ tabl(cmp$edate)
 summary(cmp$party)
 # create election year variable
 cmp$election.year <- as.numeric(as.character(substr(cmp$date, 1, 4)))
+# create econ l-r and lib-auth scales, following Bakker & Hobolt (2013)
+cmp <- cmp %>% mutate(econlr = scale_logit(data=cmp,
+                                           pos=c("per401", "per402", "per407", "per505", 
+                                                 "per507", "per410", "per414", "per702"), 
+                                           neg=c("per403", "per404", "per406", "per504", 
+                                                 "per506", "per413", "per412", "per701", 
+                                                 "per405", "per409", "per415", "per503"),
+                                           zero_offset = 0.5))
+
+cmp <- cmp %>% mutate(econlr.sal = (per401 + per402 + per407 + per505 + per507 + per410 + per414 + per702) +
+                        (per403 + per404 + per406 + per504 + per506 + per413 + per412 + per701 + per405 + per409 + per415 + per503))
+
+
+summary(cmp$econlr.sal)
+
+cmp <- cmp %>% mutate(auth = scale_logit(data=cmp,
+                                         pos=c("per305", "per601", "per603", "per605", 
+                                               "per608", "per606"), 
+                                         neg=c("per501", "per602", "per604", "per502", 
+                                               "per607", "per416", "per705", "per706", 
+                                               "per201", "per202"),
+                                         zero_offset = 0.5))
+
+cmp <- cmp %>% mutate(auth.sal = (per305 + per601 + per603 + per605 + per608  + per606) +
+                        (per501 + per602 + per604 + per502 + per607 + per416 + per705 + per706 + per201 + per202))
 # select party code, party family
 # as well as party-election specific variables like right/left coding of the manifesto
-# also included the codes used to construct left-right and lib-auth scales in Bakker & Hobolt (2013)
 cmp.x <- cmp %>% select(party, parfam, election.year, edate, rile, 
-                        per401, per402, per407, per505, 
-                        per507, per410, per414, per702,
-                        per403, per404, per406, per504, 
-                        per506, per413, per412, per701, 
-                        per405, per409, per415, per503,
-                        per305, per601, per603, per605, 
-                        per608, per606,
-                        per501, per602, per604, per502, 
-                        per607, per416, per705, per706, 
-                        per201, per202) 
+                        econlr, econlr.sal, auth, auth.sal)
 names(cmp.x)[1:2] <- c("cmp_id", "cmp_parfam") # relabel for clarity
 head(cmp.x)
 ess$election.year <- as.numeric(as.character(substr(ess$ref.election, 1, 4)))
@@ -270,7 +285,7 @@ essx <- ess %>% select(idno, cntry, essround, essround.year, int.date,
                        party.vote.ess, partyfacts_id, partyfacts_name,
                        cmp_id, cmp_parfam, vote.left, ref.election,
                        election.year, edate, rile,
-                       starts_with("per")) %>% 
+                       econlr, econlr.sal, auth, auth.sal) %>% 
                        as.data.frame()
 
 write.csv(essx, "ess_cumulative_core.csv")
