@@ -48,7 +48,7 @@ es.df.clean <- function(x){
                       starts_with("edulvl"), # educational attainment (several vars)
                       starts_with("isco"), # occupation
                       starts_with("prtv"), # party vote
-                      -ends_with("de2"), # drop 2nd German vote intention var
+                      -ends_with("de1"), # drop 1st German vote intention var
   ) %>% 
     as.data.frame()
   # find FIRST country-specific vote variable
