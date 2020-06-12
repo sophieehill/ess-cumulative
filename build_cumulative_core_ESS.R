@@ -121,6 +121,10 @@ ess <- left_join(ess, cw08, by=c("isco08"="isco08"))
 ess <- ess %>% mutate(oesch_class = coalesce(oesch_class88, oesch_class08))
 tabl(ess$oesch_class)
 
+# NOTE: since I am constructing the class mapping just based on occupation
+# categories 1-4 (the self-employed) of the Oesch class schema will not be included here
+# if you want to include these categories, follow Oesch's mapping using the additional variables 
+# "emplrel" and "emplno"
 ess <- ess %>% mutate(oesch_class_sum = case_when(oesch_class %in% c(1,2) ~ "Self-employed professionals",
                                                   oesch_class %in% c(3,4) ~ "Small business owners",
                                                   oesch_class %in% c(5,6) ~ "Technical (semi-)professionals",
